@@ -151,8 +151,25 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+let odds = []
 
+// for (i = 0; i < nums.length; i++) {
+//     if ((nums[i] % 2) > 0) {
+//         odds.push(nums[i])
+//     }
+// }
 
+// for (const arrNum of nums) {
+//     if ((arrNum % 2) > 0) {
+//         odds.push(arrNum)
+//     }
+// }
+
+nums.forEach((arrNum) => {
+    if ((arrNum % 2) > 0) {
+        odds.push(arrNum)
+    }
+})
 
 console.log('Exercise 11 result:', odds);
 
@@ -175,7 +192,21 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
+let fizz = []
+let buzz = []
+let fizzbuzz = []
 
+nums.forEach((arrNum) => {
+    if ((arrNum % 3) === 0) {
+        fizz.push(arrNum)
+    }
+    if ((arrNum % 5) === 0) {
+        buzz.push(arrNum)
+    }
+    if ((arrNum % 3) === 0 && (arrNum % 5) === 0) {
+        fizzbuzz.push(arrNum)
+    }
+})
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
@@ -201,6 +232,8 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
+let numList = numArrays.at(-1)
+
 console.log('Exercise 13 result:', numList);
 
 /*
@@ -214,7 +247,7 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-
+let num = numArrays[2][1]
 
 console.log('Exercise 14 result:', num);
 
@@ -231,6 +264,13 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
+let total = 0
+
+numArrays.forEach((subArr) => {
+    subArr.forEach((arrNum) => {
+        total+=arrNum
+    })
+})
 
 
 console.log('Exercise 15 result:\n', total);
