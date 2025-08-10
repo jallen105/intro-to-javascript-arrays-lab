@@ -71,7 +71,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-
+foods.splice(1, 1, 'sushi', 'cupcake')
 
 console.log('Exercise 6 result:', foods);
 
@@ -86,7 +86,7 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-
+let yummy = foods.slice(1, 3)
 
 console.log('Exercise 7 result:', yummy);
 
@@ -101,7 +101,7 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-
+let soyIdx = foods.indexOf('tofu')
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -119,7 +119,7 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-
+let allFoods = foods.join(' -> ')
 
 console.log('Exercise 9 result:', allFoods);
 
@@ -134,7 +134,7 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-
+let hasSoup = foods.includes('soup')
 
 console.log('Exercise 10 result:', hasSoup);
 
